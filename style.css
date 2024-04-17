@@ -1,6 +1,7 @@
 body{
     width: 100%;
     background: url(images/backdrop.jpg) no-repeat;
+    backdrop-filter: blur(10px);
     box-sizing: border-box;
     background-size: cover;
     background-attachment: fixed;
@@ -8,6 +9,7 @@ body{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     border: 2px solid rgba(255, 255, 255, 0.383);
+    letter-spacing: 1px;
     text-align: center;
 }
 
@@ -24,54 +26,110 @@ h1{
 img{
     width: 150px;
     border-radius: 100px;
+    border: 5px solid aqua;
+    padding: 3px;
 }
 
 
 /* Name in hyperlink */
+.highlight{
+    color: aqua;
+}
+h2{
+    margin-bottom: 20px;
+}
 h2 a{
     text-decoration: none;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     border: 2px solid rgba(255, 255, 255, 0);
     border-radius: 8px;
+    padding: 3px;
     transition: .3s ease;
 }
 h2 a:hover{
     border: 2px solid rgba(255, 255, 255, 0.383);
     background-color: rgba(11, 220, 220, 0.531);
+    padding: 3px;
     border-radius: 8px;
 }
+
+/* Contacts */
+.contacts{
+    justify-self: center;
+    width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 80px;
+}
+.contacts .details{
+    display: flex;
+    align-items: center;
+    
+}
+.contacts .details img{
+    width: 20px;
+    border: 0;
+    border-radius: 0;
+    margin-right: 10px;
+}
+
+.contacts .details p{
+    margin: 0;
+    text-indent: 0;
+}
+
 
 /* Self Introduction */
 h3, h4{
     text-align: left;
+    margin-bottom: 25px;
+
 }
 p{
     text-align: justify;
     text-indent: 40px;
+    margin-bottom: 50px;
 }
 
 /* Educational Background */
 
 table{
     width: 100%;
-    border: 2px solid rgba(255, 255, 255, 0.383);
+    border: 1px solid rgba(255, 255, 255, 0.383);
     border-collapse: collapse;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
 }
 th, td{
     border: 2px solid rgba(255, 255, 255, 0.383);
+    padding: 4px;
 }
 th{
     padding: 8px;
-    background-color: rgba(11, 220, 220, 0.531);
+    background-color: rgba(11, 220, 220, 0.213);
 }
 
 /* Expertise and apps-used*/
+.expertise, .apps{
+    background-color: rgba(0, 255, 255, 0.065);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+.expertise img, .apps img{
+    border: none;
+    padding: none;
+    border-radius: 0;
+    margin-right: 40px;
+    margin-left: 20px;
+}
 ul{
     text-align: left;
 }
-.my-expertise{
+.expertise .my-expertise{
     list-style: square;
 }
 
