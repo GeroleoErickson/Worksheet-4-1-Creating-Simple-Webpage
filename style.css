@@ -1,0 +1,84 @@
+body{
+    width: 100%;
+    background: url(images/backdrop.jpg) no-repeat;
+    box-sizing: border-box;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid rgba(255, 255, 255, 0.383);
+    text-align: center;
+}
+
+/* Self Porfolio */
+
+
+h1{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+/* Image */
+img{
+    width: 150px;
+    border-radius: 100px;
+}
+
+
+/* Name in hyperlink */
+h2 a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 8px;
+    transition: .3s ease;
+}
+h2 a:hover{
+    border: 2px solid rgba(255, 255, 255, 0.383);
+    background-color: rgba(11, 220, 220, 0.531);
+    border-radius: 8px;
+}
+
+/* Self Introduction */
+h3, h4{
+    text-align: left;
+}
+p{
+    text-align: justify;
+    text-indent: 40px;
+}
+
+/* Educational Background */
+
+table{
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.383);
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+th, td{
+    border: 2px solid rgba(255, 255, 255, 0.383);
+}
+th{
+    padding: 8px;
+    background-color: rgba(11, 220, 220, 0.531);
+}
+
+/* Expertise and apps-used*/
+ul{
+    text-align: left;
+}
+.my-expertise{
+    list-style: square;
+}
+
+.my-apps{
+    list-style: decimal;
+}
+
+h3{
+    color: aqua;
+}
